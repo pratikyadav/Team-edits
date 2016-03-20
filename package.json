@@ -1,0 +1,35 @@
+{
+  "name": "osm-ten-years",
+  "version": "1.0.0",
+  "description": "One page visualization showing the last 10 years of OSM contributions",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify index.js -o build/site.js & serve -p 3002",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o build/site.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapbox/osm-data-report.git"
+  },
+  "keywords": [
+    "osm",
+    "data",
+    "visualization"
+  ],
+  "author": "tristen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapbox/osm-data-report/issues"
+  },
+  "homepage": "https://github.com/mapbox/osm-data-report",
+  "dependencies": {
+    "d3": "^3.5.5",
+    "mapbox.js": "^2.1.5",
+    "raven-js": "^1.1.11"
+  },
+  "devDependencies": {
+    "serve": "^1.4.0",
+    "watchify": "^2.3.0"
+  }
+}

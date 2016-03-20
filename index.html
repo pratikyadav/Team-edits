@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>10 years of MAPBOX Team | MapBox</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name='twitter:site' content='@mapbox' />
+    <meta property='og:site_name' content='10 years of OpenStreetMap' />
+    <meta name='twitter:url' content='https://mapbox.com/ten-years-openstreetmap/' />
+    <meta name='twitter:domain' content='https://mapbox.com/ten-years-openstreetmap/' />
+    <meta property='og:url' content='https://mapbox.com/ten-years-openstreetmap/' />
+    <meta name='twitter:title' content='10 years of OpenStreetMap' />
+    <meta property='og:title' content='10 years of OpenStreetMap' />
+    <meta name='twitter:description' content="OpenStreetMap 10 years in, hundreds of thousands of people have mapped 25 million miles of roads in every country in the world. Here is a look back at how the most detailed map of the world started." />
+    <meta property='og:description' content="OpenStreetMap 10 years in, hundreds of thousands of people have mapped 25 million miles of roads in every country in the world. Here is a look back at how the most detailed map of the world started." />
+    <meta name='twitter:image' content='https://mapbox.com/ten-years-openstreetmap/img/twitter-card.png' />
+    <meta name='st:image' content='https://mapbox.com/ten-years-openstreetmap/img/twitter-card.png' />
+    <meta property='og:image' content='https://mapbox.com/ten-years-openstreetmap/img/twitter-card.png' />
+    <meta property='og:type' content='website' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+    <link href='base.css' rel='stylesheet' />
+    <link href='site.css' rel='stylesheet' />
+  </head>
+  <body class='fill-darkblue intro'>
+
+  <!-- Opening Modal -->
+  <section class='modal'>
+    <div class='modal-content'>
+      <div class='limiter pad8y clearfix'>
+        <div class='col8 margin2 dark pad4y'>
+          <div class='prose space-bottom2 center'>
+            <h1><span class='inline icon osm title-link'></span>10 years of MAPBOX Team</h1>
+            <p class='quiet'>coz we map like boss</p>
+          </div>
+
+          <div class='col12 space-bottom4 clearfix center'>
+            <a href='#' class='js-explore button button-keyline animate dark'>OLAA</a>
+          </div>
+
+          <div class='space center space-bottom2 col12'><!--
+            --><a href='https://www.facebook.com/sharer/sharer.php'
+               class='dot small-circle inline dark dark-hover pad0 animate fill-facebook js-facebook'>
+              <span class='icon facebook'></span>
+            </a><!--
+            --><a href='https://twitter.com/intent/tweet/'
+               class='dot small-circle inline dark dark-hover pad0 animate fill-twitter js-twitter'>
+              <span class='icon twitter'></span>
+            </a>
+          </div>
+
+          <div class='small quiet center'>
+            Visualization by <a href='https://mapbox.com/' target='_blank'>Pratik</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map visualization -->
+  <section class='contain full-height'>
+
+    <header class='pin-topleft z10 pad2 animate'>
+      <h1><a href='#' class='js-about strong inline icon osm dark-shadow title-link'>10 years of OpenStreetMap</a></h1>
+    </header>
+
+    <div id='map' class='map dark'></div>
+
+    <div id='controls' class='pin-bottom z10 pad4y pad1x clearfix col12 animate'>
+      <div class='limiter'>
+        <div class='col8 margin2 control-padding contain'>
+          <a href='#' class='js-play button fill-darken pin-bottomleft icon playback round-left keyline-right interactive-control'></a>
+          <div id='scrubber' class='fill-darken pad2x pad1y contain round-topright controls'>
+            <div class='js-range-tooltip range-tooltip fill-darken0 block dark round-top keyline-bottom'>
+              <span class='dot legend-key inline pad0 animate'></span>
+              <label class='strong'></label>
+            </div>
+          </div>
+          <a href='#' class='js-next button fill-darken pin-bottomright round-right keyline-left interactive-control center w80'>
+            <span class='icon globe'>&nbsp;Jump</span>
+          </a>
+        </div>
+        <div class='col12 pad1y center dark small truncate clear dark-shadow'>
+          <strong class='js-stats stats col12 truncate space'></strong>
+          <strong class='js-label col12 truncate'></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class='pin-bottomright z1000 attribution pad1x pad0y dark small dark-shadow animate'>
+      <span class='quiet'>Data &copy; <a href='http://osm.org/about/' target='_blank'>OpenStreetMap</a> contributors</span>
+      <a href='https://www.facebook.com/sharer/sharer.php' class='icon facebook js-facebook animate'></a>
+      <a href='https://twitter.com/intent/tweet/' class='icon twitter js-twitter animate'></a>
+    </div>
+
+  </section>
+
+  <script src='build/site.min.js'></script>
+  <script>
+    var analytics=analytics||[];(function(){var e=['identify','track','trackLink','trackForm','trackClick','trackSubmit','page','pageview','ab','alias','ready','group'],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src=('https:'===document.location.protocol?'https://':"http://")+'d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/'+e+'/analytics.min.js';var n=document.getElementsByTagName('script')[0];n.parentNode.insertBefore(t,n)};
+    analytics.load(window.location.hostname.indexOf('mapbox.com') !== -1 ? 'fl0c8p240n' : '0biiejpgfj');
+  </script>
+  </body>
+</html>
